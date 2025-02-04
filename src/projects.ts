@@ -22,7 +22,8 @@ export const projects = [
     title: "Winter Of Blue",
     description:
       "Sitio Web construido con HTML, CSS y Animaciones para artísta musical Chilena. ",
-    image: "https://luissubiabre.github.io/assets/img/portafolio-5.png",
+    image:
+      "https://res.cloudinary.com/dxxrdckad/image/upload/v1738688802/porfolio/g2wagn4kd7ouais0kobb.png",
     technologies: ["HTML", "CSS", "Javascript"],
     github: "https://github.com/LuisSubiabre/wob-css",
     live: "https://luissubiabre.github.io/wob-css/",

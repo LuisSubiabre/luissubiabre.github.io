@@ -22,7 +22,7 @@ const AboutComponent = () => {
             />
           </div>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-            Soy un desarrollador Full Stack apasionado con más de 10 años de
+            Soy un desarrollador Web Full Stack con más de 10 años de
             experiencia en la creación de soluciones web innovadoras y
             escalables. Especializado en React, TypeScript y tecnologías web
             modernas, me dedico a diseñar interfaces limpias, eficientes y
