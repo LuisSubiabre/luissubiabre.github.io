@@ -28,4 +28,14 @@ export const projects = [
     github: "https://github.com/LuisSubiabre/wob-css",
     live: "https://luissubiabre.github.io/wob-css/",
   },
+  {
+    title: "LoFi Radio",
+    description:
+      "Este proyecto es un sitio web de música lofi desarrollado con React, TypeScript y HeroUI, diseñado para brindar una experiencia relajante a los amantes de este género musical.",
+    image:
+      "https://res.cloudinary.com/dxxrdckad/image/upload/v1738854033/porfolio/eppfne8thx4uwducdkea.png",
+    technologies: ["React", "TypeScript", "HeroUI"],
+    github: "https://github.com/LuisSubiabre/lofi-radio",
+    live: "https://lofi-radio-sepia.vercel.app/",
+  },
 ];
