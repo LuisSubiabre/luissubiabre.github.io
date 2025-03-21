@@ -17,7 +17,7 @@ export const projects = [
       "https://res.cloudinary.com/dtwd43hka/image/upload/v1742570562/portfolio/oalxglqyduzvtt2bbwux.png",
     technologies: ["React", "NodejS", "TailwindCSS", "PostgreSQL"],
     github: "https://github.com/LuisSubiabre/papeleria-alas-de-alondra",
-    live: "https://github.com/LuisSubiabre/Proyecto_Final_FullStack_G71",
+    live: "https://proyecto-final-full-stack-g71-jdbu.vercel.app/",
   },
   {
     title: "Pizzeria Mama Mía",
