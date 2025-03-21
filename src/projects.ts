@@ -4,10 +4,20 @@ export const projects = [
     description:
       "Sitio web institucional del una institución educativa desarrollado con React y Wordpress como CMS.",
     image:
-      "https://res.cloudinary.com/dtwd43hka/image/upload/f_auto,q_auto/v1/portfolio/qlonrg7pke3yzbkcqdob",
+      "https://res.cloudinary.com/dtwd43hka/image/upload/v1742570421/portfolio/s2aensrgavpgseknpfaz.png",
     technologies: ["React", "Wordpress", "Bootstrap"],
     github: "https://github.com/LuisSubiabre/leumag",
     live: "https://liceoexperimental.cl",
+  },
+  {
+    title: "Papeleria Alas de Alondra",
+    description:
+      "Marketplace de venta de productos de papeleria desarrollado con React, NodeJs, PostgreSQL, TailwindCSS como proyecto final para el bootcamp de DesafioLatam.",
+    image:
+      "https://res.cloudinary.com/dtwd43hka/image/upload/v1742570562/portfolio/oalxglqyduzvtt2bbwux.png",
+    technologies: ["React", "NodejS", "TailwindCSS", "PostgreSQL"],
+    github: "https://github.com/LuisSubiabre/papeleria-alas-de-alondra",
+    live: "https://github.com/LuisSubiabre/Proyecto_Final_FullStack_G71",
   },
   {
     title: "Pizzeria Mama Mía",
