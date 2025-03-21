@@ -159,12 +159,12 @@ const NavbarComponent = () => {
                 exit={{ opacity: 0, height: 0 }}
                 className="md:hidden overflow-hidden"
               >
-                <div className="py-4 space-y-4">
+                <div className="py-4 space-y-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg rounded-lg mt-2">
                   {navItems.map((item) => (
                     <motion.button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className="block w-full text-left text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors py-2"
+                      className="block w-full text-left text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
                       whileHover={{ x: 10 }}
                     >
                       {item.label}
@@ -172,7 +172,7 @@ const NavbarComponent = () => {
                   ))}
                   <motion.button
                     onClick={() => setDarkMode(!darkMode)}
-                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors py-2"
+                    className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
                     whileHover={{ x: 10 }}
                   >
                     {darkMode ? <Sun size={20} /> : <Moon size={20} />}
