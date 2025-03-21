@@ -93,11 +93,9 @@ const SkillsComponent = () => {
                 {skills
                   .filter((skill) => skill.category === category)
                   .map((skill) => (
-                    <motion.div
+                    <div
                       key={skill.name}
-                      variants={itemVariants}
                       className="group p-4 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-lg flex flex-col items-center gap-2 hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
-                      whileHover={{ scale: 1.02 }}
                     >
                       <motion.div
                         className="text-gray-700 dark:text-gray-300 transition-transform duration-300 group-hover:scale-110"
@@ -109,7 +107,7 @@ const SkillsComponent = () => {
                       <span className="text-gray-800 dark:text-gray-200 font-medium">
                         {skill.name}
                       </span>
-                    </motion.div>
+                    </div>
                   ))}
               </div>
             </motion.div>
