@@ -118,7 +118,6 @@ const HeroComponent = () => {
                 </a>
                 <a
                   href="#" // Add your CV URL here
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
                   aria-label="Download CV"
