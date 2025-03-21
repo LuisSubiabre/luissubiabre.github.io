@@ -32,7 +32,7 @@ const HeroComponent = () => {
       <section id="inicio" className="relative">
         <Toaster position="bottom-center" reverseOrder={false} />
 
-        <header className="min-h-screen flex items-center justify-center bg-gradient-to-t from-blue-0 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900 relative overflow-hidden">
+        <header className="min-h-screen flex items-center justify-center bg-gradient-to-t from-blue-0 via-white to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 relative overflow-hidden">
           {/* Background pattern */}
           <div className="absolute inset-0 opacity-10 dark:opacity-5">
             <div className="absolute inset-0 bg-grid-pattern"></div>

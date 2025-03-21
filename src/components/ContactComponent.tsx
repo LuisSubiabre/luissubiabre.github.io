@@ -52,7 +52,10 @@ const ContactComponent = () => {
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
 
-      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <section
+        id="contact"
+        className="py-20 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+      >
         <motion.div
           className="max-w-4xl mx-auto px-4 text-center"
           variants={containerVariants}

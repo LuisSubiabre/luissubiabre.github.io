@@ -39,6 +39,7 @@ const NavbarComponent = () => {
     { id: "about", label: "Acerca de" },
     { id: "projects", label: "Proyectos" },
     { id: "skills", label: "Skills" },
+    { id: "contact", label: "Contacto" },
   ];
 
   return (
