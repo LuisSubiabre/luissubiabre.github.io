@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.2](https://github.com/LuisSubiabre/luissubiabre.github.io/compare/v1.2.1...v1.2.2) (2025-03-21)
+
+
+### Bug Fixes
+
+* live link ([a8690fd](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/a8690fd01b1a9e5688de5e111cc7d0429bc8ff99))
+
 ### [1.2.1](https://github.com/LuisSubiabre/luissubiabre.github.io/compare/v1.2.0...v1.2.1) (2025-03-21)
 
 
