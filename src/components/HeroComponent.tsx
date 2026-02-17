@@ -1,10 +1,10 @@
-import { Github, Mail, Linkedin, FileText, Youtube } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 import { Toaster } from "react-hot-toast";
-import { copyToClipboard } from "../helpers/copyToClipboard"; // Asegúrate de que la ruta es correcta
+//import { copyToClipboard } from "../helpers/copyToClipboard"; // Asegúrate de que la ruta es correcta
 import { motion } from "framer-motion";
 
 const HeroComponent = () => {
-  const email = "";
+  //const email = "";
 
   const containerVariants = {
     hidden: { opacity: 0 },

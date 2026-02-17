@@ -2,6 +2,26 @@ import { Mail, Github, Linkedin, Youtube } from "lucide-react";
 import { Toaster } from "react-hot-toast";
 import { copyToClipboard } from "../helpers/copyToClipboard";
 import { motion } from "framer-motion";
+import { useForm, ValidationError } from "@formspree/react";
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xqedbnva");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">Email Address</label>
+      <input id="email" type="email" name="email" />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <textarea id="message" name="message" />
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
 
 const ContactComponent = () => {
   const email = "";
@@ -90,6 +110,8 @@ const ContactComponent = () => {
               />
               {email}
             </motion.button>
+
+            <ContactForm />
 
             <div className="flex justify-center gap-6 mt-8">
               {socialLinks.map((link) => (
