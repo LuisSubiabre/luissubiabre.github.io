@@ -6,20 +6,86 @@ import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xqedbnva");
+
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="p-6 rounded-xl bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 text-center"
+      >
+        <h3 className="text-lg font-semibold mb-2">¡Mensaje enviado! 🎉</h3>
+        <p>Gracias por contactarme. Te responderé pronto.</p>
+      </motion.div>
+    );
   }
+
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <textarea id="message" name="message" />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
-    </form>
+    <motion.form
+      onSubmit={handleSubmit}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="max-w-xl mx-auto bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg space-y-5"
+    >
+      {/* Email */}
+      <div>
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+        >
+          Correo electrónico
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="tu@email.com"
+          className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-500 transition"
+        />
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+          className="text-sm text-red-500 mt-1"
+        />
+      </div>
+
+      {/* Message */}
+      <div>
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+        >
+          Mensaje
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows={4}
+          placeholder="Cuéntame sobre tu proyecto o idea..."
+          className="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-500 transition resize-none"
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+          className="text-sm text-red-500 mt-1"
+        />
+      </div>
+
+      {/* Submit */}
+      <motion.button
+        type="submit"
+        disabled={state.submitting}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.97 }}
+        className="w-full py-3 rounded-lg bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-700 dark:to-gray-600 text-white font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-600 dark:hover:to-gray-500 transition disabled:opacity-50"
+      >
+        {state.submitting ? "Enviando..." : "Enviar mensaje"}
+      </motion.button>
+    </motion.form>
   );
 }
 
