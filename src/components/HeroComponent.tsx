@@ -4,7 +4,7 @@ import { copyToClipboard } from "../helpers/copyToClipboard"; // Asegúrate de q
 import { motion } from "framer-motion";
 
 const HeroComponent = () => {
-  const email = "contacto@luissubiabre.dev";
+  const email = "";
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -105,7 +105,7 @@ const HeroComponent = () => {
                     Youtube
                   </span>
                 </a>
-                <a
+                {/* <a
                   href="#"
                   onClick={() => copyToClipboard(email)}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
@@ -115,8 +115,8 @@ const HeroComponent = () => {
                   <span className="text-gray-700 dark:text-gray-300 group-hover:underline">
                     contacto@luissubiabre.dev
                   </span>
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href="#" // Add your CV URL here
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition-colors"
@@ -124,7 +124,7 @@ const HeroComponent = () => {
                 >
                   <FileText className="w-5 h-5 text-gray-700 dark:text-gray-300" />
                   <span className="text-gray-700 dark:text-gray-300">CV</span>
-                </a>
+                </a> */}
               </div>
             </motion.div>
           </motion.div>

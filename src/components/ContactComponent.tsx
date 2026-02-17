@@ -4,7 +4,7 @@ import { copyToClipboard } from "../helpers/copyToClipboard";
 import { motion } from "framer-motion";
 
 const ContactComponent = () => {
-  const email = "contacto@luissubiabre.dev";
+  const email = "";
 
   const containerVariants = {
     hidden: { opacity: 0 },
