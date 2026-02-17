@@ -1,6 +1,6 @@
-import { Mail, Github, Linkedin, Youtube } from "lucide-react";
+import { Github, Linkedin, Youtube } from "lucide-react";
 import { Toaster } from "react-hot-toast";
-import { copyToClipboard } from "../helpers/copyToClipboard";
+//import { copyToClipboard } from "../helpers/copyToClipboard";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -90,7 +90,7 @@ function ContactForm() {
 }
 
 const ContactComponent = () => {
-  const email = "";
+  // const email = "";
 
   const containerVariants = {
     hidden: { opacity: 0 },
