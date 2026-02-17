@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/LuisSubiabre/luissubiabre.github.io/compare/v1.2.2...v1.3.0) (2026-02-17)
+
+
+### Features
+
+* add ContactForm component with Formspree integration and update dependencies ([684c7b2](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/684c7b2d1e325a0d17ede3ab7ade77714b81f560))
+* enhance ContactForm with improved UI and validation messages ([3701111](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/37011114ce92a5d4ff6b1266adf8cc3a925786e1))
+
+
+### Bug Fixes
+
+* comment out button in ContactComponent to prevent clipboard copy functionality ([d3ed5e5](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/d3ed5e589706706cf3623cea4901def34a04add1))
+* comment out unused imports and email variable in ContactComponent ([c7166e3](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/c7166e315ae6c84723cc9ddd3d4041ef06ec4c67))
+* remove email address from Contact and Hero components ([83feaac](https://github.com/LuisSubiabre/luissubiabre.github.io/commit/83feaac6bc2de49aa99d6b71657fdcd171ff56a0))
+
 ### [1.2.2](https://github.com/LuisSubiabre/luissubiabre.github.io/compare/v1.2.1...v1.2.2) (2025-03-21)
 
 
