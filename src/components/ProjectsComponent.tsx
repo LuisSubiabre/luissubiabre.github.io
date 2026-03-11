@@ -51,7 +51,7 @@ const ProjectsComponent = () => {
             <motion.div
               key={project.title}
               variants={itemVariants}
-              className="group bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+              className="group flex flex-col h-full bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.1 }}
             >
@@ -62,15 +62,17 @@ const ProjectsComponent = () => {
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-white/90 hover:bg-white transition-colors"
-                    aria-label="Ver código en GitHub"
-                  >
-                    <Github className="w-5 h-5 text-gray-900" />
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-white/90 hover:bg-white transition-colors"
+                      aria-label="Ver código en GitHub"
+                    >
+                      <Github className="w-5 h-5 text-gray-900" />
+                    </a>
+                  )}
                   <a
                     href={project.live}
                     target="_blank"
@@ -82,11 +84,12 @@ const ProjectsComponent = () => {
                   </a>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold dark:text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3 flex-grow">
+                  {" "}
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">

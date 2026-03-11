@@ -48,4 +48,14 @@ export const projects = [
     github: "https://github.com/LuisSubiabre/lofi-radio",
     live: "https://lofi-radio-sepia.vercel.app/",
   },
+  {
+    title: "consulta de pacientes",
+    description:
+      "Formulario para consulta de imágenes médicas para cliente Scanner Sur, Punta Arenas, Chile.",
+    image:
+      "https://res.cloudinary.com/libreriaalondra/image/upload/v1773249872/Captura_de_pantalla_2026-03-11_a_la_s_2.20.51_p.m._bivkjd.png",
+    technologies: ["PHP", "Bootstrap", "mySQL"],
+    // github: "#",
+    live: "https://www.scannersurportal.cl/",
+  },
 ];
